@@ -1,0 +1,218 @@
+.study-schedule-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  background-repeat: no-repeat;
+}
+
+.schedule-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1d4ed8;
+}
+
+.progress-bar {
+  margin-bottom: 1.5rem;
+}
+
+.bar-track {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.bar-fill {
+  height: 10px;
+  background: #2563eb;
+  border-radius: 8px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-buttons span {
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.filter-buttons button {
+  margin-right: 0.5rem;
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.filter-buttons button.active {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.schedule-card {
+  background: white;
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(30, 64, 175, 0.1);
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.schedule-time {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.video-counts {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.video-item {
+  flex: 1 1 320px;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.video-number {
+  font-weight: bold;
+  color: #1d4ed8;
+  margin-bottom: 0.3rem;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.badge.completed {
+  background-color: #dcfce7;
+  color: #15803d;
+  border: 1px solid #22c55e;
+}
+
+.badge.pending {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #f87171;
+}
+
+.no-videos {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.quiz-container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  min-height: 100vh;
+}
+
+.quiz-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 2rem;
+}
+
+.quiz-card,
+.result-card {
+  background: rgba(30, 41, 59, 0.9);
+  backdrop-filter: blur(6px);
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.question {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.option {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background-color: #2563eb33;
+}
+
+.option.selected {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border-color: #38bdf8;
+}
+
+.next-button,
+.restart-button {
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.next-button:disabled {
+  background-color: #334155;
+  cursor: not-allowed;
+}
+
+.next-button:hover:not(:disabled),
+.restart-button:hover {
+  background-color: #0ea5e9;
+}

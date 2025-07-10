@@ -1,0 +1,130 @@
+/* src/Pages/Attendance.css */
+
+.attendance-page {
+  background-color: #f9fafb;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+.subject-attendance {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.subject-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 20px;
+  display: flex;
+  width: 320px;
+  align-items: center;
+  gap: 20px;
+}
+
+.progress-ring {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.progress-ring svg {
+  transform: rotate(-90deg);
+}
+
+.progress-text {
+  position: absolute;
+  top: 32px;
+  left: 34px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.subject-details h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.subject-details p {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.calendar-title {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #0f172a;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.calendar-day {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  font-size: 14px;
+}
+
+.calendar-day.present {
+  border-left: 6px solid #16a34a;
+}
+
+.calendar-day.absent {
+  border-left: 6px solid #dc2626;
+}
+
+.calendar-day.late {
+  border-left: 6px solid #facc15;
+}
+
+.day-num {
+  display: block;
+  font-weight: bold;
+  color: #0f172a;
+  font-size: 16px;
+}
+
+.status-text {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.summary-box {
+  background: #fff;
+  border-left: 6px solid #3b82f6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  max-width: 900px;
+  margin: auto;
+}
+
+.summary-box h2 {
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.summary-box p {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 10px;
+}

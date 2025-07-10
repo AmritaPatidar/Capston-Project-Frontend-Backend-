@@ -1,0 +1,400 @@
+
+
+
+
+.leadership-section {
+  padding: 5rem 1.5rem;
+  background-color: #171c3a;
+  color: white;
+}
+
+.leadership-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.leadership-subtext {
+  color: #cbd5e1;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.team-card {
+  background-color: #0f172a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  width: 90%;
+ 
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.team-content {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.team-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.team-title {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+.profile-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.6rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.profile-btn:hover {
+  background-color: #2563eb;
+}
+
+.review-page {
+  padding: 30px;
+  background: #f9faff;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.review-title {
+  font-size: 24px;
+  color: #6b21a8;
+  margin-bottom: 20px;
+}
+
+.review-search {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.review-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-content h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #1e1b4b;
+}
+
+.course {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.stars {
+  color: #facc15;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.comment {
+  font-style: italic;
+  color: #374151;
+}
+
+.no-result {
+  color: #b91c1c;
+  font-style: italic;
+}
+/* src/App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: white;
+}
+
+.main-container {
+  background-color: #0f172a;
+}
+
+/* Header */
+.header {
+  background-color: #1e293b;
+  padding: 1rem 1.5rem;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #2563eb;
+  border-radius: 4px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.nav-menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-menu div:hover {
+    color: #60a5fa;
+    cursor: pointer;
+  }
+
+  .nav-contact {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.quote-button {
+  background-color: #2563eb;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.quote-button:hover {
+  background-color: #1e40af;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  background-color: #4b5563;
+  border-radius: 999px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  padding: 5rem 1.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://csspicker.dev/api/image/?q=business+team+meeting&image_type=photo');
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #d1d5db;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.primary-button,
+.secondary-button {
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.primary-button {
+  background-color: #2563eb;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #1d4ed8;
+}
+
+.secondary-button {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.secondary-button:hover {
+  background-color: white;
+  color: #0f172a;
+}
+
+/* Partners */
+.partners-section {
+  background-color: #2563eb;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+.partners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  white-space: nowrap;
+}
+
+.partner-name {
+  font-weight: 600;
+}
+
+/* Section Layout */
+.section-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding: 5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+.rounded-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.bullet-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.bullet-list li::before {
+  content: '';
+  width: 10%;
+  height: 0.5rem;
+  background-color: #2563eb;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+

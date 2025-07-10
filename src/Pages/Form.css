@@ -1,0 +1,92 @@
+/* File: src/components/Login.css */
+
+.login-background {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/046/096/198/small/graduation-cap-and-books-on-wooden-table-with-blurred-background-free-photo.jpeg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background: linear-gradient(to bottom right, #cdcfd0, #e4e7ea);
+  padding: 2rem;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.welcome {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  height: 20px;
+}
+
+.subtitle {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.refresh-btn {
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.instructions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  justify-content: flex-start;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #031a38;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.login-btn:hover{
+  background-color: #05397d;
+}
+.manual-link {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-top: 0.5r
+}

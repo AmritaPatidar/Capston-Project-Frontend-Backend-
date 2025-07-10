@@ -1,0 +1,105 @@
+.student-list-container {
+  padding: 30px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.heading {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.add-student-form {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.add-student-form input,
+.add-student-form select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add-student-form button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.course-sections {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.course-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  border-left: 5px solid #3b82f6;
+}
+
+.course-card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.student-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.student-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.student-id {
+  color: #777;
+  font-size: 12px;
+}
+
+.edit-btn,
+.delete-btn,
+.save-btn {
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #facc15;
+  color: black;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.save-btn {
+  background-color: #22c55e;
+  color: white;
+}
+
+.edit-input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}

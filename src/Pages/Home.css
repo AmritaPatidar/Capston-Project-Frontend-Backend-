@@ -1,109 +1,587 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  .homepage-body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: rgb(3, 7, 47);
+  color: #fff;
+  height: 530px;
+  border-bottom-left-radius: 50% 100px;
+  border-bottom-right-radius: 50% 100px;
+ 
+}
+
+.homepage-container {
+  text-align: center;
+}
+
+.hero {
+  padding: 14px 10px 10px;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.4;
   
-  /* Body Theme */
-  body {
-    background-color: #ffffff;
-    color: #1e3a8a; /* Tailwind blue-900 */
-  }
+}
+
+.sub-text {
+  font-size: 16px;
+  margin: 20px 0;
+  color: #cccccc;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.start-button {
+  background-color: #3fd18d;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.video-button {
+  background-color: transparent;
+  border: 1px solid #aaa;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.students {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 30px;
   
-  /* Navbar */
-  nav {
-    background-color: #1e3a8a; /* Deep Blue */
-    color: white;
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
+
+.student {
+  width: 290px;
+  height: 370px;
+  border-radius: 35%;
+  overflow: hidden;
   
-  nav h1 {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: #fb923c; /* Tailwind orange-400 */
-  }
+  border: 15px solid rgb(236, 233, 231);
+  margin-top: 80px;
+ 
+}
+.student:hover {
+  transform: scale(1.1);
+}
+.studentss {
+  width: 290px;
+  height: 400px;
+  border-radius: 35%;
+  overflow: hidden;
+  border: 15px solid rgb(255, 255, 255);
   
-  nav ul {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-  }
+  transition: transform 0.3s ease-in-out;
+} 
+
+.studentss:hover {
+  transform: scale(1.1); 
+}
+.studentsss {
+    width: 290px;
+  height: 370px;
+  border-radius: 35%;
+  overflow: hidden;
+  border: 15px solid rgb(255, 255, 255);
+  margin-top: 80px;
   
-  nav ul li {
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
+}
+.studentsss:hover {
+  transform: scale(1.1); 
+}
+.student-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   
-  nav ul li:hover {
-    color: #fdba74; /* Tailwind orange-300 */
+}
+
+
+/*  compaines section */
+/* .............................................................................................2222222222222222222222................................... */
+
+.companies-section {
+background-color: white;
+  padding: 40px 20px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.slider-wrapper {
+  width: 80%; /* Width of visible area (one item) */
+  height: 90px;
+  overflow: hidden;
+  background-color: #041933;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: slideOneByOne 10s steps(5) infinite;
+}
+
+.company-item {
+  width: 300px; /* Same as slider-wrapper */
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #eee5e5;
+  white-space: nowrap;
+  height: 90px;
+}
+
+.company-logo {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+/* Animation: moves one item at a time with pause */
+@keyframes slideOneByOne {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-300px); }
+  40% { transform: translateX(-600px); }
+  60% { transform: translateX(-900px); }
+  80% { transform: translateX(-1200px); }
+  100% { transform: translateX(0); }
+}
+
+
+/* how we are */
+/* ..........................................................................................33333333333333333333333333333333333333.............................. */
+
+.about-section {
+  padding: 60px;
+ background-image: url(https://wallpapercave.com/wp/wp3220559.jpg);
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  gap: 200px;
+  align-items: center;
+}
+
+.about-left {
+  /* position: relative; */
+  flex: 1;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.team-image {
+ 
+  bottom: -30px;
+  left: 80px;
+  width: 250px;
+  border: 5px solid #fff;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.team-image img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.subtitle {
+  color: #2f57ef;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.about-right h1 {
+  font-size: 36px;
+  margin: 0 0 20px;
+  color: #111;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.features {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #111;
+}
+
+.about-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-btn {
+  background: #2f57ef;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #1d40c2;
+}
+
+.signature {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 36px;
+  color: #111;
+}
+
+/* Add this at the end of your CSS */
+
+.about-right > * {
+  opacity: 0;
+  transform: translateY(60px);
+  animation: slideUp 0.7s forwards;
+}
+
+.about-right > *:nth-child(1) { animation-delay: 0.2s; }
+.about-right > *:nth-child(2) { animation-delay: 0.4s; }
+.about-right > *:nth-child(3) { animation-delay: 0.6s; }
+.about-right > *:nth-child(4) { animation-delay: 0.8s; }
+.about-right > *:nth-child(5) { animation-delay: 1s; }
+
+/* Define slide up animation */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Hero Section */
-  .hero {
-    background-color: #fffbf0; /* Light orange tint */
-    text-align: center;
-    padding: 5rem 2rem;
+}
+
+.about-left {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+}
+
+.about-left .circle-shape {
+  position: absolute;
+  bottom: 100px;
+  left: -130px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+
+  animation: rotate 8s linear infinite;
+  z-index: 1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .hero h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1e3a8a;
-    margin-bottom: 1rem;
+  100% {
+    transform: rotate(360deg);
   }
+}
+
+
+.about-left .main-image {
+  position: relative;
+  width: 98%;
+left: 50px;
+  z-index: 2;
+  height: 580px;
+}
+
+.about-left .team-image {
+  position: absolute;
+  bottom: -0px;
+  left: 400px;
+  width: 260px;
+  height: 280px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+
+
+/*  excelsive it services...................................................................444444444444444444444444444444........................................................ */
+
+.service-card {
+  background: #fff;
+  color: #000;
+  border-radius: 0;
+  overflow: hidden;
+  text-align: left;
+  width: 300px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.services-section {
+  background-image: url(https://tse4.mm.bing.net/th?id=OIP.p5aaTGfriXuaNtMNh2ZpZgHaHa&pid=Api&P=0&h=180);
+  background-repeat: no-repeat;
+  background-size: cover;   /* make image cover whole area */
+  background-position: center; /* center the image */
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 720px;
+}
+.services-section .subtitle {
+  color: #5a5aff;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.services-section h2 {
+  font-size: 32px;
+  margin: 10px 0 40px;
+}
+
+/* Flexbox to keep cards in one line */
+.services-list {
+  display: flex;
+  gap: 30px; /* space between cards */
+  justify-content: center;
+  flex-wrap: nowrap; /* stay in one line, overflow if needed */
+}
+
+.service-card {
+  background: #fff;
+  color: #000;
+  border-radius: 0; /* perfect rectangle */
+  overflow: hidden;
+  text-align: left;
+  width: 300px;  /* card width */
+  flex-shrink: 0; /* prevent shrinking */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.service-icon {
+  background: #5a5aff;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 0; /* rectangle icon box too */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.service-content h3 {
+  margin: 0 0 10px;
+}
+
+.service-content p {
+  margin-bottom: 10px;
+}
+
+.service-content a {
+  color: #5a5aff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-content a:hover {
+  text-decoration: underline;
+  color: #3b82f6; /* Brighter blue on hover */
+}
+
+
+/* price .........................................................555555555555555555555555555555555555555555............................. */
+.pricing-section {
+  text-align: center;
+  padding: 20px 20px;
+  font-family: Arial, sans-serif;
+  background-image: url(https://cdn.wallpapersafari.com/84/89/rS2Zy3.jpg);
   
-  .hero p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #334155;
-  }
+}
+
+.pricing-section h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
   
-  .hero img {
-    margin-top: 2rem;
-    max-width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
+}
+
+.card {
+  background: linear-gradient(180deg, #2c447a 0%, #132b65 100%);
   
-  /* Video Section */
-  .video-section {
-    padding: 4rem 2rem;
-    background-color: #ffffff;
-    text-align: center;
-  }
+  color: #0e0b0b;
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 250px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
   
-  .video-section h3 {
-    font-size: 2rem;
-    color: #f97316; /* Tailwind orange-500 */
-    margin-bottom: 1.5rem;
-  }
-  
-  video {
-    border-radius: 0.75rem;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Features Section */
-  .features {
-    background-color: #eff6ff; /* Tailwind blue-50 */
-    padding: 4rem 2rem;
-  }
-  
-  .features h3 {
-    font-size: 2rem;
-    color: #1e40af; /* Tailwind blue-800 */
-    margin-bottom: 1rem;
-  }
-  
-  .features ul {
-    font-size: 1.1rem;
-    color: #1e3a8a;
-    padding-left: 2rem;
-    list-style: disc;
-    line-height: 1.8;
-  }
-  
+}
+
+.price span {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  text-align: left;
+}
+
+.card ul li {
+  margin: 12px 0;
+}
+
+.button {
+  background: #3975f3;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #265dc1;
+}
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.services-list {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+.services-list::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.slide-btn {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide-btn.left {
+  left: -20px;
+}
+
+.slide-btn.right {
+  right: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

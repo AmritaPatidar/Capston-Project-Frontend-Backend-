@@ -1,0 +1,114 @@
+.footer-wrapper {
+  position: relative;
+  
+  overflow: hidden;
+}
+
+
+.footer-shape-left {
+  left: 0;
+  transform: scaleX(-1); /* Flip horizontally */
+}
+
+.footer-shape-right {
+  right: 0;
+}
+
+
+/* Blue CTA Box */
+.cta-box {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1f4bd5;
+  width: 60%;
+  border-radius: 0 0 0 20px;
+  padding: 20px;
+  color: #fff;
+  z-index: 10;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cta-label {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.cta-box h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.cta-btn {
+  background-color: #0b1fa3;
+  border: none;
+  padding: 20px 50px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer Section */
+.footer {
+  background: linear-gradient(to right, #0d0b1c, #0b0b1a);
+  color: white;
+  padding: 80px 40px 60px; /* top padding increased to avoid overlapping content */
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footer-col p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons svg {
+  margin-right: 10px;
+  font-size: 16px;
+  background-color: #1a1a2e;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+}
